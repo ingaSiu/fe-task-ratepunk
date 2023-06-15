@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 16px;
+  background: #45565e 0% 0% no-repeat padding-box;
+  border: 1px solid #1f343e;
+  justify-content: center;
+}
+
+.store_container {
+  border: 1px solid #1f343e;
+  border-radius: 16px;
+  background: #45565e 0% 0% no-repeat padding-box;
+  display: flex;
+  align-items: center;
+  padding: 16px;
+}
+.store_container img {
+  padding-left: 8px;
+}
+
+.text {
+  text-align: left;
+  font: normal normal normal 16px/16px Noto Sans;
+  letter-spacing: 0px;
+  color: #f8f4f9;
+}
+
+.store_name {
+  text-align: left;
+  font: normal normal bold 20px/16px Gadugi;
+  letter-spacing: 0px;
+  color: #f8f4f9;
+}
+
+.reviews_container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon_wrapper {
+  display: flex;
+  padding-left: 32px;
+}
+.icon_wrapper svg {
+  color: #ffffff;
+  height: 20px;
+  width: 21px;
+}
+
+.reviews_text {
+  text-align: left;
+  font: normal normal normal 20px/24px Noto Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+}/*# sourceMappingURL=StoreContent.module.css.map */
