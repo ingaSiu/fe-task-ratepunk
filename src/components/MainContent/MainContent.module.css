@@ -1,4 +1,7 @@
 .container {
   border: 1px solid #1f343e;
   background: #f8cc5d 0% 0% no-repeat padding-box;
+  display: flex;
+  justify-content: space-around;
+  padding: 64px;
 }/*# sourceMappingURL=MainContent.module.css.map */
