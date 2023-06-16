@@ -2,7 +2,8 @@
   border: 1px solid #1f343e;
   background: #f8f4f9 0% 0% no-repeat padding-box;
   border-radius: 16px;
-  width: 500px;
+  width: 544px;
+  height: 797px;
   padding: 64px;
 }
 
@@ -20,6 +21,31 @@
   color: #1f343e;
   font-size: 20px;
   line-height: 32px;
+}
+
+.email_form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  .input_with_icon {
+    position: relative;
+    width: 100%;
+    input {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #1f343e;
+      border-radius: 8px;
+      outline: none;
+      padding: 8px 8px 8px 60px;
+
+      width: 100%;
+    }
+    img {
+      position: absolute;
+      left: 20px;
+      top: 10px;
+    }
+  }
 }
 
 .message {
@@ -44,4 +70,8 @@
     right: 0;
     top: 5px;
   }
+}
+
+.referral_form {
+  display: none;
 }
