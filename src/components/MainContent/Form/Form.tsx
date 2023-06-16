@@ -1,19 +1,22 @@
+import { SyntheticEvent, useState } from 'react';
+
 import Button from '../../Button/Button';
 import styles from './Form.module.scss';
-import { useState } from 'react';
 
 const Form = () => {
   const [email, setEmail] = useState('');
   const [referral, setReferral] = useState('');
 
-  const handleSubmit = () => {
+  const handleSubmit = (e: SyntheticEvent) => {
+    e.preventDefault();
     setReferral('https://ratepunk.com/referral');
   };
 
-  const handleCopy = (e) => {
+  const handleCopy = (e: SyntheticEvent) => {
     e.preventDefault();
     navigator.clipboard.writeText(referral);
   };
+
   return (
     <div className={styles.form_wrapper}>
       <div className={styles.title}>REFER FRIENDS AND GET REWARDS</div>
@@ -21,20 +24,23 @@ const Form = () => {
         Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs
         our extension. Minimum cash-out at 20 coins.
       </div>
-      <form>
-        <div>Error msg</div>
 
-        <input
-          type="text"
-          value={email}
-          placeholder="Enter your email address"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-        <Button />
+      <form onSubmit={handleSubmit} className={styles.email_form}>
+        <div className={styles.input_with_icon}>
+          <img src="email.svg" alt="Email icon" />
+          <input
+            type="text"
+            value={email}
+            placeholder="Enter your email address"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+
+        <Button name="Get Referral Link" />
       </form>
 
-      <form>
-        <div>Success message</div>
+      <form className={styles.referral_form}>
+        <div className={styles.success_msg}>Success message</div>
         <div className={styles.input_with_btn}>
           <input type="text" value={referral} onChange={(e) => setReferral(e.target.value)} />
           <button onClick={handleCopy}>Copy</button>
