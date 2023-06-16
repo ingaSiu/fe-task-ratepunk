@@ -14,10 +14,8 @@
   background: #45565e 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
-  padding: 16px;
-}
-.store_container img {
-  padding-left: 8px;
+  padding: 8px 43px 8px 24px;
+  gap: 8px;
 }
 
 .text {
@@ -25,6 +23,7 @@
   font: normal normal normal 16px/16px Noto Sans;
   letter-spacing: 0px;
   color: #f8f4f9;
+  margin: 0;
 }
 
 .store_name {
@@ -32,6 +31,8 @@
   font: normal normal bold 20px/16px Gadugi;
   letter-spacing: 0px;
   color: #f8f4f9;
+  margin: 0;
+  padding-top: 8px;
 }
 
 .reviews_container {
