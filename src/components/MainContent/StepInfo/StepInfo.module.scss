@@ -1,7 +1,6 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  flex-grow: 2;
 }
 
 .step {
@@ -10,13 +9,17 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+  }
 }
 
 .img_wrapper {
   width: 100%;
 
   img {
-    width: 80%;
+    width: 100%;
   }
 }
 
