@@ -10,6 +10,7 @@ const Form = () => {
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     setReferral('https://ratepunk.com/referral');
+    alert('testing');
   };
 
   const handleCopy = (e: SyntheticEvent) => {
