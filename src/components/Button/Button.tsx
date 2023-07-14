@@ -1,5 +1,8 @@
 import styles from './Button.module.scss';
 
+// TODO
+// padaryti vietoj name text arba tiesiog name istrinti ir ideti teksta kaip childen, nes ten
+// ne pats pavadinimas o labiau tiesiog tekstas ant btn
 type ButtonProps = {
   name: string;
   children?: React.ReactNode;

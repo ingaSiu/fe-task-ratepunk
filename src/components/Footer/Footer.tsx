@@ -1,5 +1,9 @@
 import styles from './Footer.module.scss';
 
+// TODO
+// painspectinti ir panaikiti nuo vieno pavadinimo padding
+// tada paziureti kaip gali ma butu sulygiuoti viska
+
 const Footer = () => {
   return (
     <div className={styles.container}>
