@@ -37,7 +37,7 @@ const Form = () => {
           />
         </div>
 
-        <Button name="Get Referral Link" />
+        <Button>Get Referral Link</Button>
       </form>
 
       <form className={styles.referral_form}>
