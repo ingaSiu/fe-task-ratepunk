@@ -1,3 +1,4 @@
+import SocialCard from './SocialCard';
 import styles from './Footer.module.scss';
 
 // TODO
@@ -43,31 +44,11 @@ const Footer = () => {
           <div>
             <div className={styles.titles}>SOCIAL</div>
             <div className={styles.social_wrapper}>
-              <div className={styles.img_wrapper}>
-                <a href="#">
-                  <img src="instagram.svg" alt="Instagram icon" />
-                </a>
-              </div>
-              <div className={styles.img_wrapper}>
-                <a href="#">
-                  <img src="facebook.svg" alt="Facebook icon" />
-                </a>
-              </div>
-              <div className={styles.img_wrapper}>
-                <a href="#">
-                  <img src="linkedin.svg" alt="Linkedin icon" />
-                </a>
-              </div>
-              <div className={styles.img_wrapper}>
-                <a href="#">
-                  <img src="twitter.svg" alt="Twitter icon" />
-                </a>
-              </div>
-              <div className={styles.img_wrapper}>
-                <a href="#">
-                  <img src="tiktok.svg" alt="TikTok icon" />
-                </a>
-              </div>
+              <SocialCard src="instagram.svg" alt="Instagram icon" />
+              <SocialCard src="facebook.svg" alt="Facebook icon" />
+              <SocialCard src="linkedin.svg" alt="Linkedin icon" />
+              <SocialCard src="twitter.svg" alt="Twitter icon" />
+              <SocialCard src="tiktok.svg" alt="Tiktok icon" />
             </div>
           </div>
         </div>
