@@ -1,4 +1,4 @@
-import { AiFillStar } from 'react-icons/ai';
+import { AiFillStar } from 'react-icons/ai'
 import styles from './StoreContent.module.scss';
 
 // padaryti atskira componenta ir per props paduoti tuos vardus
