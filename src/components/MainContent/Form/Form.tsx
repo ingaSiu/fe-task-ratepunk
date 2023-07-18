@@ -3,6 +3,8 @@ import { SyntheticEvent, useState } from 'react';
 import Button from '../../Button/Button';
 import styles from './Form.module.scss';
 
+// formos input btn gali buti pasleptas sone ir kai keiciasi state jis atsiranda
+
 const Form = () => {
   const [email, setEmail] = useState('');
   const [referral, setReferral] = useState('');
