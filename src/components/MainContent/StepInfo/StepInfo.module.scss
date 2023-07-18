@@ -9,6 +9,7 @@
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  gap: 48px;
 
   &:nth-child(2) {
     flex-direction: row-reverse;
@@ -47,7 +48,7 @@
     color: #1f343e;
     text-align: left;
     font-size: 20px;
-    font-weight: 200;
+    font-weight: normal;
     width: 256px;
   }
 }
