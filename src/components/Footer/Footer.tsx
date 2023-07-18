@@ -1,10 +1,6 @@
 import SocialCard from './SocialCard';
 import styles from './Footer.module.scss';
 
-// TODO
-// painspectinti ir panaikiti nuo vieno pavadinimo padding
-// tada paziureti kaip gali ma butu sulygiuoti viska
-
 const Footer = () => {
   return (
     <div className={styles.container}>
@@ -17,6 +13,7 @@ const Footer = () => {
         </p>
         <p className={styles.copyright}>© 2021 Ratepunk. All Rights Reserved.</p>
       </div>
+
       <div className={styles.right_container}>
         <div className={styles.links}>
           <div className={styles.links_title}>QUICK LINKS</div>
