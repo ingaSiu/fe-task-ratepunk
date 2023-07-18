@@ -1,8 +1,5 @@
 import styles from './Nav.module.scss';
 
-// TODO
-// return nera butinas jei nera virsuj logikos - pabandyti visur padaryti jei grazina tik jsx
-
 const Nav = () => {
   return (
     <div className={styles.nav}>

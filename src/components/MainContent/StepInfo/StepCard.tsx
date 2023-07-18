@@ -15,6 +15,7 @@ const StepCard = ({ img, altImg, count, title, info }: StepProps) => {
         <div className={styles.img_wrapper}>
           <img src={img} alt={altImg} />
         </div>
+
         <div className={styles.info_wrapper}>
           <div className={styles.count}>{count}</div>
           <div className={styles.title}>{title}</div>
