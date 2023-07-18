@@ -5,6 +5,7 @@
   justify-content: center;
   padding-top: 64px;
   padding-bottom: 58px;
+  gap: 75px;
 }
 
 .ratepunk_info {
@@ -29,7 +30,7 @@
 
 .right_container {
   display: flex;
-  gap: 24px;
+  gap: 75px;
 }
 
 .titles {
@@ -59,7 +60,6 @@
     letter-spacing: 1.6px;
     color: #1f343e;
     text-transform: uppercase;
-    padding-bottom: 32px;
   }
 
   a {
@@ -105,7 +105,8 @@
   background: #4eb3e3 0% 0% no-repeat padding-box;
   border: 1px solid #1f343e;
   border-radius: 8px;
-  align-self: center;
+
+  display: flex;
 
   img {
     width: 16px;
