@@ -1,3 +1,5 @@
+@import '../../../scss/mixins/mediaQueries.scss';
+
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -13,6 +15,19 @@
 
   &:nth-child(2) {
     flex-direction: row-reverse;
+    @include small {
+      flex-direction: column;
+    }
+    @include medium {
+      flex-wrap: wrap;
+    }
+  }
+
+  @include small {
+    flex-direction: column;
+  }
+  @include medium {
+    flex-wrap: wrap;
   }
 }
 
