@@ -8,11 +8,10 @@ const Footer = () => {
     <div className={styles.container}>
       <Info />
 
-      <div className={styles.right_container}>
-        <Links />
+      <Links />
 
-        <Contact />
-      </div>
+      <Contact />
+
       <p className={styles.copyright}>© 2021 Ratepunk. All Rights Reserved.</p>
     </div>
   );
