@@ -15,9 +15,9 @@
   @include small {
     flex-direction: column;
   }
-  @include medium {
-    flex-wrap: wrap;
-  }
+  // @include medium {
+  //   flex-wrap: wrap;
+  // }
 }
 
 .store_container {
