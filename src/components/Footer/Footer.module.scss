@@ -5,126 +5,32 @@
   border: 1px solid #1f343e;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding-top: 64px;
   padding-bottom: 58px;
   gap: 75px;
 
   @include small {
     flex-direction: column;
+    flex-wrap: nowrap;
   }
   @include medium {
     flex-wrap: wrap;
   }
 }
-
-.ratepunk_info {
-  width: 544px;
-}
-
-.ratepunk_about {
-  text-align: left;
-  font: normal normal normal 16px/24px Noto Sans;
-  letter-spacing: 0px;
-  color: #1f343e;
-  padding-top: 16px;
-}
-
 .copyright {
-  text-align: left;
-  font: normal normal normal 16px/24px Noto Sans;
-  letter-spacing: 0px;
-  color: #6d7a80;
-  padding-top: 48px;
-}
+  display: none;
 
+  @include small {
+    display: block;
+    color: #6d7a80;
+  }
+}
 .right_container {
   display: flex;
   gap: 75px;
 
   @include small {
     flex-direction: column;
-  }
-}
-
-.titles {
-  text-align: left;
-  font: normal normal bold 20px/24px Noto Sans;
-  letter-spacing: 1.6px;
-  color: #1f343e;
-  text-transform: uppercase;
-}
-
-.contact_wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-
-  .links_title {
-    text-align: left;
-    font: normal normal bold 20px/24px Noto Sans;
-    letter-spacing: 1.6px;
-    color: #1f343e;
-    text-transform: uppercase;
-  }
-
-  a {
-    text-decoration: none;
-    text-align: left;
-    font: normal normal normal 16px/24px Noto Sans;
-    letter-spacing: 0px;
-    color: #1f343e;
-    padding-top: 16px;
-    &:hover {
-      color: #4eb3e3;
-    }
-    &:active {
-      color: #4eb3e3;
-    }
-  }
-}
-
-.email_footer {
-  display: flex;
-  gap: 16px;
-  padding-top: 16px;
-
-  img {
-    background: #f8f4f9 0% 0% no-repeat padding-box;
-  }
-
-  div {
-    text-align: left;
-    font: normal normal normal 16px/24px Noto Sans;
-    letter-spacing: 0px;
-    color: #1f343e;
-  }
-}
-
-.social_wrapper {
-  display: flex;
-  gap: 4px;
-  padding-top: 16px;
-}
-
-.img_wrapper {
-  background: #4eb3e3 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
-  border-radius: 8px;
-
-  display: flex;
-
-  img {
-    width: 16px;
-    height: 16px;
-    padding: 8px;
-    box-sizing: content-box;
   }
 }
