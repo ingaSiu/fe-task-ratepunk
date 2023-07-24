@@ -1,3 +1,5 @@
+@import '../../scss/mixins/mediaQueries.scss';
+
 .container {
   border: 1px solid #1f343e;
   background: #f8cc5d 0% 0% no-repeat padding-box;
@@ -5,4 +7,11 @@
   justify-content: space-evenly;
   padding: 64px;
   align-items: center;
+
+  @include small {
+    flex-direction: column;
+  }
+  @include medium {
+    flex-wrap: wrap;
+  }
 }

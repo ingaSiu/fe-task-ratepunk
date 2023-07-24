@@ -1,3 +1,4 @@
+@import '../../scss/mixins/mediaQueries.scss';
 .wrapper {
   display: flex;
   padding-top: 32px;
@@ -9,6 +10,13 @@
 
   a {
     text-decoration: none;
+  }
+
+  @include small {
+    flex-direction: column;
+  }
+  @include medium {
+    flex-wrap: wrap;
   }
 }
 
