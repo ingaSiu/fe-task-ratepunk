@@ -1,6 +1,10 @@
 @import '../../../scss/mixins/mediaQueries.scss';
 .ratepunk_info {
   width: 544px;
+
+  @include small {
+    width: 100%;
+  }
 }
 
 .ratepunk_about {

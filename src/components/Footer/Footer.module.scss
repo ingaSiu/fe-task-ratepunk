@@ -9,14 +9,16 @@
   padding-top: 64px;
   padding-bottom: 58px;
   gap: 75px;
+  padding: 10px;
 
   @include small {
     flex-direction: column;
-    flex-wrap: nowrap;
+
+    align-items: flex-start;
   }
-  @include medium {
-    flex-wrap: wrap;
-  }
+  // @include medium {
+  //   flex-wrap: wrap;
+  // }
 }
 .copyright {
   display: none;
@@ -24,13 +26,5 @@
   @include small {
     display: block;
     color: #6d7a80;
-  }
-}
-.right_container {
-  display: flex;
-  gap: 75px;
-
-  @include small {
-    flex-direction: column;
   }
 }
