@@ -17,25 +17,24 @@
     flex-direction: row-reverse;
     @include small {
       flex-direction: column;
-    }
-    @include medium {
-      flex-wrap: wrap;
+      align-items: center;
     }
   }
 
   @include small {
     flex-direction: column;
-  }
-  @include medium {
-    flex-wrap: wrap;
+    align-items: center;
   }
 }
 
 .img_wrapper {
   width: 100%;
-
+  display: flex;
   img {
     width: 140px;
+  }
+  @include small {
+    justify-content: center;
   }
 }
 
@@ -48,6 +47,9 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 32px;
+    @include small {
+      text-align: center;
+    }
   }
 
   .title {
@@ -57,6 +59,9 @@
     text-align: left;
     text-transform: uppercase;
     line-height: 48px;
+    @include small {
+      text-align: center;
+    }
   }
 
   .info {
@@ -65,5 +70,9 @@
     font-size: 20px;
     font-weight: normal;
     width: 256px;
+    @include small {
+      text-align: center;
+      width: 350px;
+    }
   }
 }

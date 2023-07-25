@@ -1,4 +1,4 @@
-import styles from './Footer.module.scss';
+import styles from './Contact.module.scss';
 
 type SocialProps = {
   src: string;

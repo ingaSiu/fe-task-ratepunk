@@ -1,0 +1,35 @@
+@import '../../../scss/mixins/mediaQueries.scss';
+.ratepunk_info {
+  width: 544px;
+
+  @include small {
+    width: 100%;
+  }
+  @include medium {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.ratepunk_about {
+  text-align: left;
+  font: normal normal normal 16px/24px Noto Sans;
+  letter-spacing: 0px;
+  color: #1f343e;
+  padding-top: 16px;
+}
+
+.copyright {
+  text-align: left;
+  font: normal normal normal 16px/24px Noto Sans;
+  letter-spacing: 0px;
+  color: #6d7a80;
+  padding-top: 48px;
+
+  @include small {
+    display: none;
+  }
+  @include medium {
+    display: none;
+  }
+}

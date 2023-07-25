@@ -16,7 +16,7 @@
     flex-direction: column;
   }
   @include medium {
-    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
