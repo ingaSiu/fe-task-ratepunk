@@ -13,17 +13,21 @@
 
   @include small {
     flex-direction: column;
-
     align-items: flex-start;
   }
-  // @include medium {
-  //   flex-wrap: wrap;
-  // }
+  @include medium {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 .copyright {
   display: none;
 
   @include small {
+    display: block;
+    color: #6d7a80;
+  }
+  @include medium {
     display: block;
     color: #6d7a80;
   }
