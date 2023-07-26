@@ -21,15 +21,15 @@ const Form = () => {
   };
 
   return (
-    <div className={styles.form_wrapper}>
+    <div className={styles.formWrapper}>
       <div className={styles.title}>REFER FRIENDS AND GET REWARDS</div>
       <div className={styles.information}>
         Refer your friends to us and earn hotel booking vouchers. We'll give you 1 coin for each friend that installs
         our extension. Minimum cash-out at 20 coins.
       </div>
 
-      <form onSubmit={handleSubmit} className={styles.email_form}>
-        <div className={styles.input_with_icon}>
+      <form onSubmit={handleSubmit} className={styles.emailForm}>
+        <div className={styles.inputWithIcon}>
           <img src="email.svg" alt="Email icon" />
           <input
             type="text"
@@ -42,9 +42,9 @@ const Form = () => {
         <Button>Get Referral Link</Button>
       </form>
 
-      <form className={styles.referral_form}>
-        <div className={styles.success_msg}>Success message</div>
-        <div className={styles.input_with_btn}>
+      <form className={styles.referralForm}>
+        <div className={styles.successMsg}>Success message</div>
+        <div className={styles.inputWithBtn}>
           <input type="text" value={referral} onChange={(e) => setReferral(e.target.value)} />
           <button onClick={handleCopy}>Copy</button>
         </div>

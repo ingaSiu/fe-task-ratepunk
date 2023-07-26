@@ -20,7 +20,7 @@
   }
 }
 
-.store_container {
+.storeContainer {
   border: 1px solid #1f343e;
   border-radius: 16px;
   background: #45565e 0% 0% no-repeat padding-box;
@@ -37,7 +37,7 @@
     margin: 0;
   }
 
-  .store_name {
+  .storeName {
     text-align: left;
     font: normal normal bold 20px/16px Gadugi;
     letter-spacing: 0px;
@@ -47,12 +47,12 @@
   }
 }
 
-.reviews_container {
+.reviewsContainer {
   display: flex;
   align-items: center;
   gap: 10px;
 
-  .icon_wrapper {
+  .iconWrapper {
     display: flex;
     padding-left: 32px;
     svg {
@@ -62,7 +62,7 @@
     }
   }
 
-  .reviews_text {
+  .reviewsText {
     text-align: left;
     font: normal normal normal 20px/24px Noto Sans;
     letter-spacing: 0px;

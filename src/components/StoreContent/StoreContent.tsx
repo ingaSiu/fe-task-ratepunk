@@ -17,15 +17,15 @@ const StoreContent = () => {
         text="available in the"
         storeName="apple app store "
       />
-      <div className={styles.reviews_container}>
-        <div className={styles.icon_wrapper}>
+      <div className={styles.reviewsContainer}>
+        <div className={styles.iconWrapper}>
           <AiFillStar />
           <AiFillStar />
           <AiFillStar />
           <AiFillStar />
           <AiFillStar />
         </div>
-        <p className={styles.reviews_text}>Chrome store reviews</p>
+        <p className={styles.reviewsText}>Chrome store reviews</p>
       </div>
     </div>
   );

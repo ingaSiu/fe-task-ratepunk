@@ -1,6 +1,6 @@
 @import '../../../scss/mixins/mediaQueries.scss';
 
-.form_wrapper {
+.formWrapper {
   border: 1px solid #1f343e;
   background: #f8f4f9 0% 0% no-repeat padding-box;
   border-radius: 16px;
@@ -30,12 +30,12 @@
   padding-bottom: 40px;
 }
 
-.email_form {
+.emailForm {
   display: flex;
   flex-direction: column;
   gap: 16px;
 
-  .input_with_icon {
+  .inputWithIcon {
     position: relative;
     width: 100%;
 
@@ -64,7 +64,7 @@
   vertical-align: text-bottom;
 }
 
-.input_with_btn {
+.inputWithBtn {
   position: relative;
   height: 100px;
   width: 200px;
@@ -81,6 +81,6 @@
   }
 }
 
-.referral_form {
+.referralForm {
   display: none;
 }

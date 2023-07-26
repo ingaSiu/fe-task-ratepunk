@@ -2,10 +2,10 @@ import SocialCard from './SocialCard';
 import styles from './Contact.module.scss';
 
 const Contact = () => (
-  <div className={styles.contact_wrapper}>
+  <div className={styles.contactWrapper}>
     <div>
       <div className={styles.titles}>CONTACT</div>
-      <div className={styles.email_footer}>
+      <div className={styles.emailFooter}>
         <img src="email-footer.svg" alt="Email icon" />
         <div>hi@ratepunk.com</div>
       </div>
@@ -13,7 +13,7 @@ const Contact = () => (
 
     <div>
       <div className={styles.titles}>SOCIAL</div>
-      <div className={styles.social_wrapper}>
+      <div className={styles.socialWrapper}>
         <SocialCard src="instagram.svg" alt="Instagram icon" />
         <SocialCard src="facebook.svg" alt="Facebook icon" />
         <SocialCard src="linkedin.svg" alt="Linkedin icon" />

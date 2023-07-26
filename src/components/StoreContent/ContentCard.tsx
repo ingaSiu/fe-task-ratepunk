@@ -10,12 +10,12 @@ type CardProps = {
 const ContentCard = ({ link, name, text, storeName }: CardProps) => {
   return (
     <a href={link} target="_blank">
-      <div className={styles.store_container}>
+      <div className={styles.storeContainer}>
         <img src={name} alt={name} />
 
         <div>
           <p className={styles.text}>{text}</p>
-          <p className={styles.store_name}>{storeName}</p>
+          <p className={styles.storeName}>{storeName}</p>
         </div>
       </div>
     </a>

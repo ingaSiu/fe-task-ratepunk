@@ -7,7 +7,7 @@ type SocialProps = {
 
 const SocialCard = ({ src, alt }: SocialProps) => {
   return (
-    <div className={styles.img_wrapper}>
+    <div className={styles.imgWrapper}>
       <a href="#">
         <img src={src} alt={alt} />
       </a>

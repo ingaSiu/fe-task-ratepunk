@@ -5,10 +5,10 @@ import styles from './MainContent.module.scss';
 const MainContent = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.left_container}>
+      <div className={styles.leftContainer}>
         <Form />
       </div>
-      <div className={styles.right_container}>
+      <div className={styles.rightContainer}>
         <StepInfo />
       </div>
     </div>

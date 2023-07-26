@@ -1,6 +1,6 @@
 @import '../../../scss/mixins/mediaQueries.scss';
 
-.contact_wrapper {
+.contactWrapper {
   display: flex;
   flex-direction: column;
   gap: 75px;
@@ -13,12 +13,12 @@
   color: #1f343e;
   text-transform: uppercase;
 }
-.social_wrapper {
+.socialWrapper {
   display: flex;
   gap: 4px;
   padding-top: 16px;
 }
-.img_wrapper {
+.imgWrapper {
   background: #4eb3e3 0% 0% no-repeat padding-box;
   border: 1px solid #1f343e;
   border-radius: 8px;
@@ -32,7 +32,7 @@
     box-sizing: content-box;
   }
 }
-.email_footer {
+.emailFooter {
   display: flex;
   gap: 16px;
   padding-top: 16px;
