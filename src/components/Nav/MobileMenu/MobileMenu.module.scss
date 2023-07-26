@@ -1,0 +1,55 @@
+@import '../../../scss/mixins/mediaQueries.scss';
+
+.slidingMenu {
+  position: absolute;
+  top: 2.8rem;
+  left: 0;
+  right: 0;
+  height: 0;
+  background-color: white;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+
+  .menuNav {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 12px 16px;
+    height: 100%;
+    list-style-type: none;
+
+    li {
+      padding: 0.75rem 0;
+
+      a {
+        color: inherit;
+        font-size: 0.875rem;
+        text-decoration: none;
+
+        &:hover {
+          color: #4eb3e3;
+        }
+      }
+    }
+  }
+}
+
+.slidingMenu.active {
+  height: 11.125rem;
+  border-bottom: 1px solid #1f343e;
+}
+
+.menuWrapper {
+  display: grid;
+  place-items: center;
+  width: 1.1431rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .menuWrapper {
+    display: none;
+  }
+}
