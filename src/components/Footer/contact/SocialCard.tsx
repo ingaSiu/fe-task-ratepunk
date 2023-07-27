@@ -5,14 +5,12 @@ type SocialProps = {
   alt: string;
 };
 
-const SocialCard = ({ src, alt }: SocialProps) => {
-  return (
-    <div className={styles.imgWrapper}>
-      <a href="#">
-        <img src={src} alt={alt} />
-      </a>
-    </div>
-  );
-};
+const SocialCard = ({ src, alt }: SocialProps) => (
+  <div className={styles.imgWrapper}>
+    <a href="#">
+      <img src={src} alt={alt} />
+    </a>
+  </div>
+);
 
 export default SocialCard;

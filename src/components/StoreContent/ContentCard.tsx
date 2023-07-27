@@ -7,19 +7,17 @@ type CardProps = {
   storeName: string;
 };
 
-const ContentCard = ({ link, name, text, storeName }: CardProps) => {
-  return (
-    <a href={link} target="_blank">
-      <div className={styles.storeContainer}>
-        <img src={name} alt={name} />
+const ContentCard = ({ link, name, text, storeName }: CardProps) => (
+  <a href={link} target="_blank">
+    <div className={styles.storeContainer}>
+      <img src={name} alt={name} />
 
-        <div>
-          <p className={styles.text}>{text}</p>
-          <p className={styles.storeName}>{storeName}</p>
-        </div>
+      <div>
+        <p className={styles.text}>{text}</p>
+        <p className={styles.storeName}>{storeName}</p>
       </div>
-    </a>
-  );
-};
+    </div>
+  </a>
+);
 
 export default ContentCard;
