@@ -1,14 +1,26 @@
 import { SyntheticEvent, useState } from 'react';
 
 import Button from '../../Button/Button';
+import axios from 'axios';
 import styles from './Form.module.scss';
 
 // formos input btn gali buti pasleptas sone ir kai keiciasi state jis atsiranda
 
-const Form = () => {
+const Form: React.FC = () => {
   const [email, setEmail] = useState('');
   const [referral, setReferral] = useState('');
+  const validateEmail = /^([a-zA-Z0-9\._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
+  const BIN_ID = import.meta.env.VITE_PUBLIC_BIN_URL;
+  const ACCESS_KEY = import.meta.env.VITE_PUBLIC_ACCESS_KEY;
+  const sendEmail = () => {
+    axios.put(`https://api.jsonbin.io/v3/b/${BIN_ID} `, `{'email':"${email}"}`, {
+      headers: {
+        'Content-Type': 'application/json',
+        'X-Master-Key': ACCESS_KEY,
+      },
+    });
+  };
   const handleSubmit = (e: SyntheticEvent) => {
     e.preventDefault();
     setReferral('https://ratepunk.com/referral');
