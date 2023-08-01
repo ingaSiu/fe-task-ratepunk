@@ -26,6 +26,9 @@ const Form: React.FC = () => {
         })
         .then(() => {
           setStatus('success');
+        })
+        .catch(() => {
+          setStatus('error');
         });
     } catch (err) {
       console.log((err as AxiosError).message);
@@ -45,6 +48,8 @@ const Form: React.FC = () => {
 
   return (
     <>
+      {status === 'error' && <ErrorMsg>Request failed. Try again.</ErrorMsg>}
+
       {status === 'empty' && <ErrorMsg>Please enter your email</ErrorMsg>}
 
       {status === 'invalid' && <ErrorMsg>Invalid email. Please enter a valid email, e.g. sample@mail.com</ErrorMsg>}
