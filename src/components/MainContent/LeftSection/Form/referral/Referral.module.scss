@@ -1,0 +1,42 @@
+@import '../../../../../scss/mixins/mediaQueries.scss';
+.inputWithBtn {
+  position: relative;
+
+  input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #1f343e;
+    border-radius: 8px;
+    outline: none;
+    padding: 20px 8px 17px 20px;
+    font: normal normal normal 20px/20px Noto Sans;
+    color: #6d7a80;
+    width: 100%;
+  }
+  button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #4eb3e3;
+    outline: none;
+    border: 1px solid black;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font: normal normal bold 20px/24px Noto Sans;
+    cursor: pointer;
+
+    @include small {
+      display: none;
+    }
+  }
+}
+
+.mobileBtn {
+  display: none;
+  @include small {
+    display: block;
+    margin-top: 1rem;
+  }
+}
