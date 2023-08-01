@@ -1,11 +1,11 @@
-import Form from './Form/Form';
+import LeftSection from './LeftSection/LeftSection';
 import StepInfo from './StepInfo/StepInfo';
 import styles from './MainContent.module.scss';
 
 const MainContent = () => (
   <div className={styles.container}>
     <div className={styles.leftContainer}>
-      <Form />
+      <LeftSection />
     </div>
     <div className={styles.rightContainer}>
       <StepInfo />
