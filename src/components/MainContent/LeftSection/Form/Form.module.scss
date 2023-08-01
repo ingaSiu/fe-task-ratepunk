@@ -1,0 +1,31 @@
+@import '../../../../scss/mixins/mediaQueries.scss';
+
+.emailForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  .inputWithIcon {
+    position: relative;
+    width: 100%;
+
+    input {
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #1f343e;
+      border-radius: 8px;
+      outline: none;
+      padding: 20px 8px 17px 60px;
+      font: normal normal normal 20px/20px Noto Sans;
+      width: 100%;
+    }
+    img {
+      position: absolute;
+      left: 20px;
+      top: 25px;
+    }
+  }
+}
+
+.referralForm {
+  display: none;
+}
