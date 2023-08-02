@@ -17,11 +17,22 @@
       padding: 20px 8px 17px 60px;
       font: normal normal normal 20px/20px Noto Sans;
       width: 100%;
+
+      @include small {
+        padding: 16px 8px 13px 60px;
+        font: normal normal normal 16px/16px Noto Sans;
+      }
     }
     img {
       position: absolute;
       left: 20px;
       top: 25px;
+
+      @include small {
+        top: 20px;
+        height: 16px;
+        width: 18px;
+      }
     }
   }
 }
