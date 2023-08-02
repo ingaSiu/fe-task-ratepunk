@@ -1,3 +1,4 @@
+@import '../../scss/mixins/mediaQueries.scss';
 .btn {
   background: #4eb3e3 0% 0% no-repeat padding-box;
   border: 1px solid #1f343e;
@@ -8,4 +9,9 @@
   color: #ffffff;
   border-radius: 8px;
   padding: 18px 8px 17px 8px;
+  @include small {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px 8px 13px 16px;
+  }
 }
