@@ -8,6 +8,9 @@
   @include small {
     gap: 32px;
   }
+  @include medium {
+    gap: 32px;
+  }
 }
 
 .titles {
