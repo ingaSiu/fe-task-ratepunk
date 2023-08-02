@@ -1,7 +1,9 @@
 @import '../../../../../scss/mixins/mediaQueries.scss';
 .inputWithBtn {
   position: relative;
-
+  @include small {
+    display: none;
+  }
   input {
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #1f343e;
@@ -26,17 +28,31 @@
     text-align: center;
     font: normal normal bold 20px/24px Noto Sans;
     cursor: pointer;
-
-    @include small {
-      display: none;
-    }
   }
 }
+.mobileWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 
-.mobileBtn {
-  display: none;
-  @include small {
-    display: block;
-    margin-top: 1rem;
+  .inputMobile {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #1f343e;
+    border-radius: 8px;
+    outline: none;
+    padding: 16px 8px 13px 16px;
+    font: normal normal normal 16px/16px Noto Sans;
+    color: #6d7a80;
+    width: 100%;
+  }
+
+  .mobileBtn {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 8px;
+  }
+
+  @media (min-width: 400px) {
+    display: none;
   }
 }

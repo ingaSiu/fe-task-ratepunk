@@ -3,6 +3,10 @@
 .wrapper {
   display: flex;
   flex-direction: column;
+
+  @include small {
+    padding: 32px 16px;
+  }
 }
 
 .step {
@@ -49,6 +53,7 @@
     line-height: 32px;
     @include small {
       text-align: center;
+      padding-bottom: 16px;
     }
   }
 
@@ -73,6 +78,8 @@
     @include small {
       text-align: center;
       width: 350px;
+      font-size: 16px;
+      margin-top: 16px;
     }
   }
 }
