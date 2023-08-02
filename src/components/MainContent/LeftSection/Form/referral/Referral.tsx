@@ -19,7 +19,9 @@ const Referral: React.FC = () => {
         <button onClick={handleCopy}>Copy</button>
       </div>
 
-      <div className={styles.mobileBtn}>
+      <div className={styles.mobileWrapper}>
+        <input type="text" ref={inputRef} value={value} className={styles.inputMobile} readOnly />
+
         <Button onClick={handleCopy}>Copy URL</Button>
       </div>
     </>
