@@ -28,9 +28,9 @@ const MobileMenu = () => {
 
       <div onClick={handleClick} className={styles.menuWrapper}>
         {isOpened ? (
-          <img src="close.svg" alt="Close menu icon" className={styles.menuIcon} width={19} height={16} />
+          <img src="close.svg" alt="Close menu icon"  width={19} height={16} />
         ) : (
-          <img src="menu.svg" alt="Open menu icon" className={styles.menuIcon} width={19} height={16} />
+          <img src="menu.svg" alt="Open menu icon"  width={19} height={16} />
         )}
       </div>
     </>
