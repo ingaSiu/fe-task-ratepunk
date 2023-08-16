@@ -1,11 +1,12 @@
+@use '../../scss/colors' as c;
 @import '../../scss/mixins/mediaQueries.scss';
 .wrapper {
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
   gap: 16px;
-  background: #45565e 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
+  background: c.$color-bg-store 0% 0% no-repeat padding-box;
+  border: 1px solid c.$color-accent-dark;
   justify-content: center;
 
   a {
@@ -23,9 +24,9 @@
 }
 
 .storeContainer {
-  border: 1px solid #1f343e;
+  border: 1px solid c.$color-accent-dark;
   border-radius: 16px;
-  background: #45565e 0% 0% no-repeat padding-box;
+  background: c.$color-bg-store 0% 0% no-repeat padding-box;
   display: flex;
   align-items: center;
   padding: 8px 43px 8px 24px;
@@ -46,7 +47,7 @@
     text-align: left;
     font: normal normal bold 20px/16px Gadugi;
     letter-spacing: 0px;
-    color: #f8f4f9;
+    color: c.$color-store-white;
     margin: 0;
     padding-top: 8px;
   }
@@ -61,7 +62,7 @@
     display: flex;
     padding-left: 32px;
     svg {
-      color: #ffffff;
+      color: c.$color-white;
       height: 20px;
       width: 21px;
     }
@@ -73,7 +74,7 @@
   .reviewsText {
     font: normal normal normal 20px/24px Noto Sans;
     letter-spacing: 0px;
-    color: #ffffff;
+    color: c.$color-white;
 
     @include small {
       font-size: 16px;

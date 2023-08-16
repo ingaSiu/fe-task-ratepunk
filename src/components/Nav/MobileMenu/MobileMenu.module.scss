@@ -1,3 +1,4 @@
+@use '../../../scss/colors.scss' as c;
 @import '../../../scss/mixins/mediaQueries.scss';
 
 .slidingMenu {
@@ -6,7 +7,7 @@
   left: 0;
   right: 0;
   height: 0;
-  background-color: white;
+  background-color: c.$color-white;
   transition: height 0.3s ease-in-out;
   overflow: hidden;
 
@@ -28,7 +29,7 @@
         text-decoration: none;
 
         &:hover {
-          color: #4eb3e3;
+          color: c.$color-blue-light;
         }
       }
     }
@@ -37,7 +38,7 @@
 
 .slidingMenu.active {
   height: 11.125rem;
-  border-bottom: 1px solid #1f343e;
+  border-bottom: 1px solid c.$color-accent-dark;
 }
 
 .menuWrapper {

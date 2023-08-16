@@ -1,10 +1,12 @@
+@use '../../scss/colors.scss' as c;
 @import '../../scss/mixins/mediaQueries.scss';
+
 .nav {
   width: 100%;
-  background-color: #ffffff;
+  background-color: c.$color-white;
   display: flex;
   justify-content: space-around;
-  border: 1px solid #1f343e;
+  border: 1px solid c.$color-accent-dark;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -37,18 +39,18 @@
 
   a {
     text-decoration: none;
-    color: #434a54;
+    color: c.$color-grey-dark;
     font-size: 20px;
     text-align: center;
     line-height: 32px;
     padding: 16px;
 
     &:hover {
-      color: #4eb3e3;
+      color: c.$color-blue-light;
     }
 
     &:active {
-      color: #4eb3e3;
+      color: c.$color-blue-light;
     }
   }
 }

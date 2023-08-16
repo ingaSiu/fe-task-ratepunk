@@ -1,8 +1,9 @@
+@use '../../scss/colors.scss' as c;
 @import '../../scss/mixins/mediaQueries.scss';
 
 .container {
-  background: #f8f4f9 0% 0% no-repeat padding-box;
-  border: 1px solid #1f343e;
+  background: c.$color-store-white 0% 0% no-repeat padding-box;
+  border: 1px solid c.$color-accent-dark;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,10 +29,10 @@
 
   @include small {
     display: block;
-    color: #6d7a80;
+    color: c.$color-grey-regular;
   }
   @include medium {
     display: block;
-    color: #6d7a80;
+    color: c.$color-grey-regular;
   }
 }

@@ -1,8 +1,9 @@
+@use '../../scss/colors.scss' as c;
 @import '../../scss/mixins/mediaQueries.scss';
 
 .container {
-  border: 1px solid #1f343e;
-  background: #f8cc5d 0% 0% no-repeat padding-box;
+  border: 1px solid c.$color-accent-dark;
+  background: c.$color-bg-primary 0% 0% no-repeat padding-box;
   display: flex;
   justify-content: space-evenly;
   padding: 64px;

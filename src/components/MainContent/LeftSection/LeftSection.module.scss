@@ -1,8 +1,9 @@
+@use '../../../scss/colors.scss' as c;
 @import '../../../scss/mixins/mediaQueries.scss';
 
 .wrapper {
-  border: 1px solid #1f343e;
-  background: #f8f4f9 0% 0% no-repeat padding-box;
+  border: 1px solid c.$color-accent-dark;
+  background: c.$color-store-white 0% 0% no-repeat padding-box;
   border-radius: 16px;
   width: 544px;
   height: 797px;
@@ -19,7 +20,7 @@
     font-family: Caveat Brush;
     font-size: 48px;
     line-height: 72px;
-    color: #1f343e;
+    color: c.$color-accent-dark;
     text-transform: uppercase;
     @include small {
       font-size: 36px;
@@ -30,7 +31,7 @@
 
   .information {
     text-align: left;
-    color: #1f343e;
+    color: c.$color-accent-dark;
     font-size: 20px;
     line-height: 32px;
     padding-bottom: 40px;
@@ -44,7 +45,7 @@
 
   .message {
     text-align: left;
-    color: #6d7a80;
+    color: c.$color-grey-regular;
     font-size: 16px;
     line-height: 32px;
     margin-top: 72px;

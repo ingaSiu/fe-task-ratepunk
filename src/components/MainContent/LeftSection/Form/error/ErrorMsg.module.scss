@@ -1,5 +1,6 @@
+@use '../../../../../scss/colors.scss' as c;
 .errorMsg {
-  color: #ed6f82;
+  color: c.$color-error;
   text-align: left;
   font-size: 12px;
   line-height: 24px;

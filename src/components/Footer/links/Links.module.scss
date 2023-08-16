@@ -1,3 +1,4 @@
+@use '../../../scss/colors.scss' as c;
 .links {
   display: flex;
   flex-direction: column;
@@ -8,7 +9,7 @@
     text-align: left;
     font: normal normal bold 20px/24px Noto Sans;
     letter-spacing: 1.6px;
-    color: #1f343e;
+    color: c.$color-accent-dark;
     text-transform: uppercase;
   }
 
@@ -17,13 +18,13 @@
     text-align: left;
     font: normal normal normal 16px/24px Noto Sans;
     letter-spacing: 0px;
-    color: #1f343e;
+    color: c.$color-accent-dark;
     padding-top: 16px;
     &:hover {
-      color: #4eb3e3;
+      color: c.$color-blue-light;
     }
     &:active {
-      color: #4eb3e3;
+      color: c.$color-blue-light;
     }
   }
 }

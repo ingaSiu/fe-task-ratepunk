@@ -1,3 +1,4 @@
+@use '../../../scss/colors.scss' as c;
 @import '../../../scss/mixins/mediaQueries.scss';
 .ratepunkInfo {
   width: 544px;
@@ -15,7 +16,7 @@
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #1f343e;
+  color: c.$color-accent-dark;
   padding-top: 16px;
 }
 
@@ -23,7 +24,7 @@
   text-align: left;
   font: normal normal normal 16px/24px Noto Sans;
   letter-spacing: 0px;
-  color: #6d7a80;
+  color: c.$color-grey-regular;
   padding-top: 48px;
 
   @include small {

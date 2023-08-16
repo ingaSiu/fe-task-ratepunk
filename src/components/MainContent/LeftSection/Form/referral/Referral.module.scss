@@ -1,3 +1,4 @@
+@use '../../../../../scss/colors' as c;
 @import '../../../../../scss/mixins/mediaQueries.scss';
 .inputWithBtn {
   position: relative;
@@ -5,20 +6,20 @@
     display: none;
   }
   input {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #1f343e;
+    background: c.$color-white 0% 0% no-repeat padding-box;
+    border: 1px solid c.$color-accent-dark;
     border-radius: 8px;
     outline: none;
     padding: 20px 8px 17px 20px;
     font: normal normal normal 20px/20px Noto Sans;
-    color: #6d7a80;
+    color: c.$color-grey-regular;
     width: 100%;
   }
   button {
     position: absolute;
     right: 0;
     top: 0;
-    background-color: #4eb3e3;
+    background-color: c.$color-blue-light;
     outline: none;
     border: 1px solid black;
     border-top-right-radius: 0.5rem;
@@ -36,13 +37,13 @@
   gap: 16px;
 
   .inputMobile {
-    background: #ffffff 0% 0% no-repeat padding-box;
-    border: 1px solid #1f343e;
+    background: c.$color-white 0% 0% no-repeat padding-box;
+    border: 1px solid c.$color-accent-dark;
     border-radius: 8px;
     outline: none;
     padding: 16px 8px 13px 16px;
     font: normal normal normal 16px/16px Noto Sans;
-    color: #6d7a80;
+    color: c.$color-grey-regular;
     width: 100%;
   }
 
