@@ -10,6 +10,7 @@ import styles from './Form.module.scss';
 const Form: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [status, setStatus] = useState<string>('');
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
   const validateEmail = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   const BIN_ID = import.meta.env.VITE_PUBLIC_BIN_URL;
@@ -17,6 +18,7 @@ const Form: React.FC = () => {
 
   const sendEmail = () => {
     try {
+      setIsSubmitting(true);
       axios
         .put(`https://api.jsonbin.io/v3/b/${BIN_ID}`, `{"email":"${email}"}`, {
           headers: {
@@ -26,12 +28,15 @@ const Form: React.FC = () => {
         })
         .then(() => {
           setStatus('success');
+          setIsSubmitting(false);
         })
         .catch(() => {
           setStatus('error');
+          setIsSubmitting(false);
         });
     } catch (err) {
       console.log((err as AxiosError).message);
+      setIsSubmitting(false);
     }
   };
 
@@ -43,6 +48,7 @@ const Form: React.FC = () => {
       setStatus('invalid');
     } else {
       sendEmail();
+      setStatus('');
     }
   };
 
@@ -68,7 +74,7 @@ const Form: React.FC = () => {
             />
           </div>
 
-          <Button>Get Referral Link</Button>
+          <Button disabled={isSubmitting}>Get Referral Link</Button>
         </form>
       )}
 
