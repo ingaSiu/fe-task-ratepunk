@@ -1,15 +1,13 @@
-import { SyntheticEvent, useRef } from 'react';
-
 import Button from '../../../../Button/Button';
 import styles from './Referral.module.scss';
+import { useRef } from 'react';
 
 const Referral: React.FC = () => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   const value = 'https://ratepunk.com/referral';
 
-  const handleCopy = (e: SyntheticEvent) => {
-    e.preventDefault();
+  const handleCopy = () => {
     navigator.clipboard.writeText(value);
   };
   return (
