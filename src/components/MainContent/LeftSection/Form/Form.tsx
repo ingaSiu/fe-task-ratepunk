@@ -11,7 +11,7 @@ const Form: React.FC = () => {
   const [email, setEmail] = useState<string>('');
   const [status, setStatus] = useState<string>('');
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const validateEmail = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
+  const emailRegex = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   const BIN_ID = import.meta.env.VITE_PUBLIC_BIN_URL;
   const ACCESS_KEY = import.meta.env.VITE_PUBLIC_ACCESS_KEY;
@@ -20,12 +20,16 @@ const Form: React.FC = () => {
     try {
       setIsSubmitting(true);
       axios
-        .put(`https://api.jsonbin.io/v3/b/${BIN_ID}`, `{"email":"${email}"}`, {
-          headers: {
-            'Content-Type': 'application/json',
-            'X-Access-Key': ACCESS_KEY,
+        .put(
+          `https://api.jsonbin.io/v3/b/${BIN_ID}`,
+          { email },
+          {
+            headers: {
+              'Content-Type': 'application/json',
+              'X-Access-Key': ACCESS_KEY,
+            },
           },
-        })
+        )
         .then(() => {
           setStatus('success');
           setIsSubmitting(false);
@@ -44,7 +48,7 @@ const Form: React.FC = () => {
     e.preventDefault();
     if (email.length === 0) {
       setStatus('empty');
-    } else if (!email.match(validateEmail)) {
+    } else if (!email.match(emailRegex)) {
       setStatus('invalid');
     } else {
       sendEmail();
