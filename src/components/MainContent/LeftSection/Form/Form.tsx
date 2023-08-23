@@ -8,9 +8,9 @@ import SuccessMsg from './success/SuccessMsg';
 import styles from './Form.module.scss';
 
 const Form: React.FC = () => {
-  const [email, setEmail] = useState<string>('');
-  const [status, setStatus] = useState<string>('');
-  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const emailRegex = /^([a-zA-Z0-9._]+)@([a-zA-Z0-9])+.([a-z]+)(.[a-z]+)?$/;
 
   const BIN_ID = import.meta.env.VITE_PUBLIC_BIN_URL;
