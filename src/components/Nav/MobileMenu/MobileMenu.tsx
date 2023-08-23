@@ -3,7 +3,7 @@ import { useRef, useState } from 'react';
 import styles from './MobileMenu.module.scss';
 
 const MobileMenu = () => {
-  const [isOpened, setIsOpened] = useState<boolean>(false);
+  const [isOpened, setIsOpened] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
@@ -28,9 +28,9 @@ const MobileMenu = () => {
 
       <div onClick={handleClick} className={styles.menuWrapper}>
         {isOpened ? (
-          <img src="close.svg" alt="Close menu icon"  width={19} height={16} />
+          <img src="close.svg" alt="Close menu icon" width={19} height={16} />
         ) : (
-          <img src="menu.svg" alt="Open menu icon"  width={19} height={16} />
+          <img src="menu.svg" alt="Open menu icon" width={19} height={16} />
         )}
       </div>
     </>
