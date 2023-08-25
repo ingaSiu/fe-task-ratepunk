@@ -16,31 +16,24 @@ const Form: React.FC = () => {
   const BIN_ID = import.meta.env.VITE_PUBLIC_BIN_URL;
   const ACCESS_KEY = import.meta.env.VITE_PUBLIC_ACCESS_KEY;
 
-  const sendEmail = () => {
+  const sendEmail = async () => {
     try {
       setIsSubmitting(true);
-      axios
-        .put(
-          `https://api.jsonbin.io/v3/b/${BIN_ID}`,
-          { email },
-          {
-            headers: {
-              'Content-Type': 'application/json',
-              'X-Access-Key': ACCESS_KEY,
-            },
+      await axios.put(
+        `https://api.jsonbin.io/v3/b/${BIN_ID}`,
+        { email },
+        {
+          headers: {
+            'Content-Type': 'application/json',
+            'X-Access-Key': ACCESS_KEY,
           },
-        )
-        .then(() => {
-          setStatus('success');
-          setIsSubmitting(false);
-        })
-        .catch(() => {
-          setStatus('error');
-          setIsSubmitting(false);
-        });
-    } catch (err) {
-      console.log((err as AxiosError).message);
+        },
+      );
+      setStatus('success');
       setIsSubmitting(false);
+    } catch (err) {
+      setIsSubmitting(false);
+      setStatus('error');
     }
   };
 
