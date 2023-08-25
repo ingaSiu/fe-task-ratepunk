@@ -1,10 +1,10 @@
 import { SyntheticEvent, useState } from 'react';
-import axios, { AxiosError } from 'axios';
 
 import Button from '../../../Button/Button';
 import ErrorMsg from './error/ErrorMsg';
 import Referral from './referral/Referral';
 import SuccessMsg from './success/SuccessMsg';
+import axios from 'axios';
 import styles from './Form.module.scss';
 
 const Form: React.FC = () => {
